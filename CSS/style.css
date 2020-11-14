@@ -1,0 +1,74 @@
+/*Fontes */ 
+
+@font-face {
+    font-family: 'PoiretOne';
+    src: url(/fonts/PoiretOne-Regular.ttf);
+}
+
+
+/*Configurações gerais */ 
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/images/fundo_roxo.png);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh; 
+}
+.top-nav {
+    height: 30vh;
+    width: 100%;
+   
+    position: fixed;
+    background-color: rgba(68, 3, 36, 0.5); 
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.nav-list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    margin-right: 2rem;
+}
+.nav-link {
+    font-size: 2em;
+    font-family: 'PoiretOne';
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+    background: linear-gradient(to top, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

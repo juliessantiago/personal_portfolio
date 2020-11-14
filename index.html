@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>JS - Web Developer</title>
+    <title>Julie Santiago - Web Developer</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
 </head>
 <body>
     <header>
-        <div class="menu">
+        <!---------------------------Menu-------------------------------------->
+        <div class="menu-toggler">
             <div class="bar half start"></div>
             <div class="bar"></div>
             <div class="bar half end"></div>
@@ -22,7 +24,146 @@
                 <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </div>
+        <!---------------------------Nome principal-------------------------------------->
+        <div class="nome-principal">
+            <h1>Julie Santiago</h1>
+            <h6>Desenvolvimento Web</h6>
+        </div> 
     </header>
+    <section class="sobre" id="sobre">
+        <div class="container"> 
+            <div class="imagem-perfil">
+                <img src="" alt="imagem de perfil">
+            </div>
+            <div class="sobre-detalhes">
+                <div class="sobre-cabecalho">
+                    <h1>Sobre mim</h1>
+                </div>
+                <p>Texto sobre eu mesma</p>
+            </div>
+            <div class="social-media">
+                <ul class="nav-list"> <!--Pode mudar classe?-->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-github-square"></i> <!--Icone github-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i> <!--Icone instagram-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-square"></i> <!--Icone linkedin-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </section>
+
+    <section class="servicos"> 
+        <div class="container"> 
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h3>O que posso fazer pra você?</h3>
+            </div>
+            <div class="conhecimentos">
+                <div class="habilidade">
+                    <div class="icon-container">
+                        <div class="fas fa-layer-group">
+
+                        </div> 
+                        <h1>Web Design</h1>
+                        <p>Pipipipopopo</p>
+                    </div>
+                </div>
+                <div class="habilidade">
+                    <div class="icon-container">
+                        <div class="fas fa-code-group">
+
+                        </div> 
+                        <h1>Backend</h1>
+                        <p>Pipipipopopo</p>
+                    </div>
+                </div>
+                <div class="habilidade">
+                    <div class="icon-container">
+                        <div class="fas fa-chart-group">
+
+                        </div> 
+                        <h1>Desenvolvimento de sites</h1>
+                        <p>Pipipipopopo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio"> 
+        <div class="container"> 
+            <div class="section-heading">
+                <h1>Projetos</h1>
+                <h3>Alguns pequenos projetos que desenvolvi</h3>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Desenvolvimento web</h6>
+                    <h1>API para qualquer coisa</h1>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Desenvolvimento web</h6>
+                    <h1>API para qualquer coisa</h1>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Desenvolvimento web</h6>
+                    <h1>API para qualquer coisa</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato"> 
+        <div class="container"> 
+            <div class="section-heading">
+                <h1>Vamos trabalhar em um projeto?</h1>
+                <h6>Fale comigo</h6>
+            </div>
+            <form action="" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Informe seu nome" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+                <label>Deixe sua mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="20" rows="10"></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+            <p>Copy: Julie Santiago, 2020</p>
+        </div>
+    </footer>
+
+
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
