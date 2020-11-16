@@ -72,3 +72,60 @@ li{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.top-nav.open {
+    top: 0;
+    border-radius: initial;
+}
+
+.menu-toggler {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform ease-in-out 600ms;
+}
+.menu-toggler.open {
+    transform: rotate(-45deg);
+}
+ 
+.bar {
+    color: transparent;
+}
+.bar.start{
+    background-image: linear-gradient(to right, pink, orange);
+    width: 100%;
+    height: 2px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    transform-origin: right;
+    transition: transform ease-in-out 600ms;
+}
+.bar.start.open {
+    background-image: linear-gradient(to right purple, yellow);
+}
+.bar.half {
+    background-image: linear-gradient(to right, pink, orange);
+    width: 75%;
+    height: 2px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+} 
+.bar.end {
+    background-image: linear-gradient(to right, pink, orange);
+    transform-origin: right; 
+    width: 100%;
+    height: 2px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    transform-origin: left;
+    transform-origin: transform ease-in-out 600ms;
+    align-self: flex-end;
+}
+.bar.open {
+    transform: rotate(450deg) translate();
+}
