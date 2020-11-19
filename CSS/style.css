@@ -195,6 +195,13 @@ header {
     text-align: center;
     opacity: 0.8;
 }
+.nav-list-rede{
+    padding-top: 2em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .redes-sociais {
     justify-content: space-around;
 }
@@ -344,7 +351,7 @@ input, textarea {
 
 /*##################################### Tela  smartphone #################################*/ 
 @media screen and (max-width: 360px){
-    
+/*------------------------Configurações gerais-------------------------------------------*/ 
     body{
         background-color: black;
         background-size: auto;
@@ -375,6 +382,7 @@ input, textarea {
 
  /*-------------------------------------Menu------------------------------------------*/ 
  .top-nav.open {
+    position: fixed;
     margin-bottom: 1em;
     background: transparent;
     padding-top: 1em;
@@ -442,8 +450,55 @@ input, textarea {
         transform: rotate(360deg)
     }
     
-    
-    
+/*---------------------------Nome principal----------------------------------*/ 
+.nome-principal{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    z-index: 1; 
+    margin-top: 1em;
+    margin-bottom: 1em;   
+}
+.nome-principal h1{ /*Julie Santiago*/ 
+    font-family: 'PoiretOne', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: white; 
+    user-select: none; /*impede a seleção do objeto na página*/ 
+}
+.nome-principal h4 { /*Desenvolvedora web*/ 
+    font-family: 'RobotoBlack', sans-serif; 
+    font-size: 1.3em;
+}
+/*----------------------------------Sobre-----------------------------------------*/
+.sobre {
+    margin-top: 2em;
+    padding: 1em;
+}
+.sobre-detalhes {
+    display: flex;
+    flex-direction: column; /*Para imagem ficar ao lado do texto*/
+    justify-content: space-around;
+}
+.imagem-perfil {
+    margin: 0 auto; /*Para zerar margem setada na tela maior*/ 
+    user-select: none; /*impede a seleção do objeto na página*/ 
+}
+.sobre-detalhes p{ 
+    display: flex;
+    padding-top: 2%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.8;
+}
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 
 
