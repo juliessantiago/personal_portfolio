@@ -1,10 +1,13 @@
 /*Fontes */ 
 
 @font-face {
-    font-family: 'PoiretOne';
-    src: url(/fonts/PoiretOne-Regular.ttf);
+    font-family: 'PoiretOne'; /*Google Fonts*/ 
+    src: url(/fonts/PoiretOne-Regular.ttf); 
 }
-
+@font-face{
+    font-family: 'Roboto'; /*Google Fonts*/ 
+    src: url(/fonts/Roboto-Regular.ttf);
+}
 
 /*Configurações gerais */ 
 *{
@@ -16,36 +19,88 @@
 html{
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+    color: white;
 }
 
 body{
     height: 100%;
     width: 100%;
-    background-image: url(/assets/images/fundo_roxo.png);
-    background-size: cover;
+    background-image: url(/assets/images/fundo_triangulos.png);
+    background-size: auto;
 }
 a{
     text-decoration: none;
-    color: whitesmoke;
-}
-
-img {
-    width: 100%;
+    color:  white;
 }
 
 header {
     width: 100%;
-    height: 100vh; 
+    height: 60vh; 
 }
-.top-nav {
-    height: 30vh;
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.secao-cabecalho {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+.secao-cabecalho h1 {
+    line-height: 0mm;
+    opacity: 0.5;
+    font-size: 5em;
+    font-family: 'RobotoBlack';
+    color: white;  
+}
+.secao-cabecalho h2{ 
+    margin-left: 4em;  /*Avanço em relação ao h1*/   
+    font-size: 2em;
+    font-family: 'Roboto';
+}
+/*======================fim das configurações gerais=====================*/ 
+/*====================================Nome================================================*/
+.nome-principal{
+    top: 30%;
+    position: absolute;
     width: 100%;
-   
+    text-align: center;
+    z-index: 1;
+    height: 100%; /*Não consigo mudar margem de baixo!!!*/ 
+    
+}
+.nome-principal h1{ /*Julie Santiago*/ 
+    font-family: 'PoiretOne', sans-serif;
+    font-size: 8em;
+    font-weight: bold;
+    color: white; 
+    user-select: none; /*impede a seleção do objeto na página*/ 
+}
+.nome-principal h4 { /*Desenvolvedora web*/ 
+    font-family: 'RobotoBlack', sans-serif; 
+    font-size: 2em;
+}
+
+
+/*==================================Menu================================*/ 
+.top-nav {
+    top: -100vh;
+    display: flex;
+    z-index: 100;/*Garantir sobreposição em relação ao nome principal*/ 
+    height: 20%; 
+    width: 100%; 
+    position: absolute;
+}
+.top-nav.open{
     position: fixed;
-    background-color: rgba(68, 3, 36, 0.5); 
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
+    transition: ease-in 2s;
+    width: 100%;
+    top: 0;
+    background-color: rgb(22, 22, 22);  
 }
 .nav-list{
     list-style: none;
@@ -53,16 +108,17 @@ header {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
+    align-content: space-around;
 }
 li{
-    margin-right: 2rem;
+   
 }
 .nav-link {
-    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 3em;
     font-family: 'PoiretOne';
-    padding: 1rem;
     font-weight: bold;
 }
 
@@ -73,59 +129,129 @@ li{
     -webkit-text-fill-color: transparent;
 }
 
-.top-nav.open {
-    top: 0;
-    border-radius: initial;
+/*==========================Menu hamburger=========================*/ 
+
+.menu-hamburger {
+    z-index: 10000;
+    margin-top: 2%; 
+    left: 90%;
+    position: fixed; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.barra {
+    width: 50px;
+    height: 6px;
+    background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+    transition: ease-in 0.5s;
+    border-radius: 5px;
+}
+ .menu-hamburger .barra::before, 
+ .menu-hamburger .barra::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+    border-radius: 5px;
+    transition: all 0.5 ease-in;
+}
+.barra::before{
+    transform: translateY(-20px); /*Barra acima*/ 
+}
+.barra::after{
+    transform: translateY(20px); /*Barra abaixo*/ 
 }
 
-.menu-toggler {
-    position: absolute;
-    top: 6rem;
-    right: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 1000;
-    transition: transform ease-in-out 600ms;
+.menu-hamburger.open .barra {
+    transform: translateX(-150%); /*Desvio para o meio da tela*/ 
+    background: transparent;
 }
-.menu-toggler.open {
+.menu-hamburger.open .barra::before{
+    transition: ease 1.5s;
+    transform:  rotate(45deg);
+    width: 30px;
+}
+.menu-hamburger.open .barra::after {
+    transition: ease 1.5s;
     transform: rotate(-45deg);
+    width: 30px;
 }
- 
-.bar {
-    color: transparent;
+
+/*==========================Sobre=============================*/
+
+.sobre {
+    margin-top: 3em;
+    padding: 1em;
 }
-.bar.start{
-    background-image: linear-gradient(to right, pink, orange);
-    width: 100%;
-    height: 2px;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    transform-origin: right;
-    transition: transform ease-in-out 600ms;
+
+.sobre-detalhes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.bar.start.open {
-    background-image: linear-gradient(to right purple, yellow);
+.imagem-perfil {
+    margin-right: 4em;
+    user-select: none; /*impede a seleção do objeto na página*/ 
 }
-.bar.half {
-    background-image: linear-gradient(to right, pink, orange);
-    width: 75%;
-    height: 2px;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-} 
-.bar.end {
-    background-image: linear-gradient(to right, pink, orange);
-    transform-origin: right; 
-    width: 100%;
-    height: 2px;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    transform-origin: left;
-    transform-origin: transform ease-in-out 600ms;
-    align-self: flex-end;
+.sobre-detalhes p{
+    height: 100%;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    text-align: justify;
 }
-.bar.open {
-    transform: rotate(450deg) translate();
+.redes-sociais {
+    justify-content: space-around;
+}
+.redes-sociais .instagram img{
+    margin-right: 3em;
+    transition: ease-in 0.6s; /*Para ter efeito de transição na 'volta' do hover*/ 
+}
+.redes-sociais .instagram img:hover {
+    transform: rotate(180deg);
+    transition: ease-in 0.6s;
+}
+.redes-sociais .github img{
+    margin-right: 3em;
+    transition: ease-in 0.6s; /*Para ter efeito de transição na 'volta' do hover*/ 
+}
+.redes-sociais .github img:hover {
+    transform: rotate(180deg);
+    transition: ease-in 0.6s;
+}
+.redes-sociais .linkedin img{
+    transition: ease-in 0.6s; /*Para ter efeito de transição na 'volta' do hover*/ 
+}
+.redes-sociais .linkedin img:hover {
+    transform: rotate(180deg);
+    transition: ease-in 0.6s;
+}
+/*=====================Habilidades========================*/
+.habilidades  {
+    margin-top: 10em;
+}
+.habilidades .itens {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.skill h1{
+    font-family: 'Roboto';
+    font-size: 2em;
+    color: white;
+}
+.skill p{
+    margin-left: 1em;
+    margin-right: 1em;
+    font: 'Roboto';
+    font-size: 1em;
+    color: white;
 }
