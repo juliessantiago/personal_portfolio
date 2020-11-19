@@ -296,7 +296,8 @@ input, textarea {
     border-radius: 5px;
 }
 #enviar{
-    background: rgb(248, 102, 17);
+    padding: 1.3em;
+    background:  #F97B13;
     color: white;
     width: initial; 
     font-family: 'Roboto', sans-serif;
@@ -307,11 +308,12 @@ input, textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: ease-in 0.2s;
 }
 #enviar:hover, 
 #enviar:focus{
-    transition: ease-in 0.3s;
-    transform: rotate(180deg);
+    transition: 0.2s;
+    transform: scale(1.2); /*Aumenta tamanho sem alterar espaçamento ao redor*/ 
 }
 /*============================Copyright========================================*/
 .rodape {
@@ -335,3 +337,81 @@ input, textarea {
     cursor: pointer;
     padding-bottom: 1.5em;
 }
+.topo a img:hover{
+    transition: ease-in-out 0.2s; 
+    transform: translateY(-2em) /*Dá uma travada?*/ 
+}
+
+/*##################################### Tela  smartphone #################################*/ 
+@media screen and (max-width: 360px) {
+    
+    body{
+        background-color: black;
+        background-size: auto;
+    }
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .secao-cabecalho {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .secao-cabecalho h1 {
+        line-height: 0mm;
+        opacity: 0.5;
+        font-size: 4em;
+        font-family: 'RobotoBlack';
+        color: white;  
+    }
+    .secao-cabecalho h2{ 
+        margin-left: 2em;  /*Avanço em relação ao h1*/   
+        font-size: 1em;
+        font-family: 'Roboto';
+    }
+
+    /*-----------------------------Menu------------------------------------------*/ 
+   
+/*-----------------------------------Menu hamburger--------------------------------*/ 
+    .menu-hamburger {
+        position: fixed;
+        left: 290px;
+        z-index: 10000;
+        margin-top: 2%; 
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .barra {
+        width: 20px;
+        height: 3px;
+        background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+        border-radius: 3px;
+    }
+     .menu-hamburger .barra::before, 
+     .menu-hamburger .barra::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+        border-radius: 3px; 
+    }
+
+    .menu-hamburger.open .barra{
+        transform: none;
+    }
+    
+    
+    
+
+
+
+
+}/*Fim configuração tela max 360px*/ 
