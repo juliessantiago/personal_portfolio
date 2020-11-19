@@ -38,7 +38,7 @@ header {
     height: 60vh; 
 }
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 120rem;
     height: 100%;
     margin: 0 auto;
@@ -91,7 +91,7 @@ header {
     top: -100vh;
     display: flex;
     z-index: 100;/*Garantir sobreposição em relação ao nome principal*/ 
-    height: 20%; 
+    height: 15%; 
     width: 100%; 
     position: absolute;
 }
@@ -111,15 +111,14 @@ header {
     align-items: center;  
     align-content: space-around;
 }
-li{
-   
-}
+
 .nav-link {
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 2em;
     font-family: 'PoiretOne';
     font-weight: bold;
+    
 }
 
 .nav-link:hover, 
@@ -139,8 +138,8 @@ li{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 .barra {
@@ -168,9 +167,9 @@ li{
 }
 
 .menu-hamburger.open .barra {
-    transform: translateX(-150%); /*Desvio para o meio da tela*/ 
-    background: transparent;
+    transform: translateX(-100em);
 }
+/*
 .menu-hamburger.open .barra::before{
     transition: ease 0.5s;
     transform:  rotate(45deg);
@@ -180,7 +179,7 @@ li{
     transition: ease 0.5s;
     transform: rotate(-45deg);
     width: 30px;
-}
+}*/ 
 
 /*==========================Sobre=============================*/
 
@@ -198,12 +197,13 @@ li{
     margin-right: 4em;
     user-select: none; /*impede a seleção do objeto na página*/ 
 }
-.sobre-detalhes p{
+.sobre-detalhes p{ /*Alinhar com a imagem!!*/ 
     height: 100%;
     color: white;
     font-family: 'Roboto';
     font-size: 1.5em;
-    text-align: justify;
+    text-align: center;
+    opacity: 0.8;
 }
 .redes-sociais {
     justify-content: space-around;
@@ -256,15 +256,14 @@ li{
     font: 'Roboto';
     font-size: 1.5em;
     color: white;
+    opacity: 0.8;
 }
 /*======================================Portfolio==================================*/
-.portfolio .portfolio-item {
-    
+.portfolio-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.portfolio-description{
-    
-}
-
 .portfolio-item .portfolio-description h1{
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
@@ -276,9 +275,14 @@ li{
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 1em;
+    opacity: 0.7;
 }
 .portfolio-img{
     width: 100%;
     height: 100%;
     margin: 0.5em;
+}
+/*===============================Formulário de contato========================*/
+.contato {
+    display: flex;
 }
