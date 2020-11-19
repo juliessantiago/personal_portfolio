@@ -294,6 +294,8 @@ form label {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     opacity: 0.8;
+    margin-bottom: 2em;
+    margin-top: 2em
 }
 input, textarea {
     width: 100%;
@@ -304,7 +306,7 @@ input, textarea {
     border-radius: 5px;
 }
 #enviar{
-    background: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0));
+    background: rgb(248, 129, 17);
     width: initial;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -320,6 +322,27 @@ input, textarea {
 }
 #enviar:hover, 
 #enviar:focus{
-    transition: ease-in 1s;
-    background: linear-gradient(to left, rgb(201, 18, 176), rgb(255, 136, 0));
+    transition: ease-in 0.1s;
+    background: rgb(250, 177, 20);
+}
+/*============================Copyright========================================*/
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /*Ajustar!!*/ 
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.rodape p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+.topo a img{
+    position: absolute;
+    cursor: pointer;
+    padding-bottom: 1.5em;
 }
