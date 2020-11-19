@@ -17,6 +17,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -47,7 +48,7 @@ header {
 
 .secao-cabecalho {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 15em;
     margin-bottom: 4em;
 }
 .secao-cabecalho h1 {
@@ -76,7 +77,7 @@ header {
 }
 .nome-principal h1{ /*Julie Santiago*/ 
     font-family: 'PoiretOne', sans-serif;
-    font-size: 8em;
+    font-size: 9em;
     font-weight: bold;
     color: white; 
     user-select: none; /*impede a seleção do objeto na página*/ 
@@ -283,6 +284,10 @@ header {
 }
 .portfolio-item:nth-child(odd){ /*Seleciona os elementos ímpares e inverte posição entre imagem e descição*/ 
     flex-direction: row-reverse;
+}
+.portfolio-item:nth-child(odd) p{
+    margin-left: 3em;
+    text-align: center;
 }
 /*===============================Formulário de contato========================*/
 .contato {
