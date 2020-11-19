@@ -519,12 +519,39 @@ input, textarea {
     padding-top: 0.6em;
 }
 .skill p{
-    font: 'Roboto';
-    font-size: 0.8em;
+    font-family: 'Roboto';
+    font-size: 0.9em;
     color: white;
     opacity: 0.8;
     margin-bottom: 1em;
 }
+/*----------------------------------------Portfolio------------------------------*/
+.portfolio .container {
+    position: relative;
+    max-width: 250px;
+}
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+.portfolio-img img{
+   width: 100%;
+   height: 100%;
+   padding-bottom: 1em;
+}
+.portfolio-item .portfolio-description h1{
+    font-family: 'Roboto';
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+.portfolio-item .portfolio-description p{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 0.9em;
+    padding-bottom: 2em;
+}
+
 
 
 
