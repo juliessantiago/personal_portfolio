@@ -481,6 +481,8 @@ input, textarea {
     justify-content: space-around;
 }
 .imagem-perfil {
+    width: auto;
+    height: auto;
     margin: 0 auto; /*Para zerar margem setada na tela maior*/ 
     user-select: none; /*impede a seleção do objeto na página*/ 
 }
@@ -498,6 +500,14 @@ input, textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.nav-list-rede li .instagram img{ /*Tive que selecionar de forma diferente aqui para pegar efeito*/ 
+    margin-right: 3em;
+    transition: ease-in 0.6s; /*Para ter efeito de transição na 'volta' do hover*/ 
+}
+.nav-list-rede li .instagram img:hover {
+    transform: rotate(180deg);
+    transition: ease-in 0.6s;
 }
 
 
