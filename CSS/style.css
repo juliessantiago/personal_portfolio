@@ -448,10 +448,10 @@ footer .rodape {
 /*-----------------------------------------Nome principal----------------------------------*/ 
 .nome-principal{
     width: 100%;
-    height: 70%;
+    height: 100%;
     text-align: center;
     z-index: 1; 
-    margin-top: 2em;
+    margin-top: 2.3em;
     margin-bottom: 1em;   
 }
 .nome-principal h1{ /*Julie Santiago*/ 
