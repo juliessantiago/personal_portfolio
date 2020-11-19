@@ -585,11 +585,9 @@ form {
 .rodape p{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1em; 
+    background-color: rgb(236, 6, 148);
+    opacity: 0.8;
 }
-
-
-
-
 
 }/*Fim configuração tela max 360px*/ 
