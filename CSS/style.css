@@ -18,7 +18,7 @@
 
 html{
     font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -323,32 +323,25 @@ input, textarea {
     transition: 0.2s;
     transform: scale(1.2); /*Aumenta tamanho sem alterar espaçamento ao redor*/ 
 }
-/*============================Copyright========================================*/
-.rodape {
+/*===================================Rodapé ========================================*/
+footer .rodape {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around; /*Ajustar!!*/ 
+    justify-content: space-around;
     width: 100%;
     position: relative;
     background-color: transparent;
-    margin-bottom: 0;
-    padding: 1em;
+}
+.rodape {
+    background-color: rgb(15, 15, 15);
 }
 .rodape p{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
-}
-.topo a img{
-    position: absolute;
-    cursor: pointer;
-    padding-bottom: 1.5em;
-    transition: ease-in-out 0.5s; 
-}
-.topo a img:hover{
-    transition: ease-in-out 0.5s; 
-    transform: translateY(-8em) /*Dá uma travada?*/ 
+    font-size: 1.2em;
+    margin-top: 1em;
 }
 
 /*##################################### Tela  smartphone #################################*/ 
@@ -409,6 +402,9 @@ input, textarea {
     margin-top: 1.5; 
     margin-bottom: 1.5;
 }
+.nav-link a:hover{
+    border-radius: 15px;
+}
 /*-----------------------------------Menu hamburger--------------------------------*/ 
     .menu-hamburger {
         position: fixed;
@@ -448,13 +444,13 @@ input, textarea {
         transform: rotate(360deg)
     }
     
-/*---------------------------Nome principal----------------------------------*/ 
+/*-----------------------------------------Nome principal----------------------------------*/ 
 .nome-principal{
     width: 100%;
     height: 70%;
     text-align: center;
     z-index: 1; 
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;   
 }
 .nome-principal h1{ /*Julie Santiago*/ 
@@ -562,7 +558,12 @@ input, textarea {
     width: 100%;
     height: 100%;
 }
-
+/*------------------------------------------Rodapé--------------------------------*/
+.rodape p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
 
 
 
