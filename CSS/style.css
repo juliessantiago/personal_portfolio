@@ -260,6 +260,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .portfolio-item .portfolio-description h1{
     font-family: 'Roboto', sans-serif;
@@ -403,9 +405,7 @@ footer .rodape {
     margin-top: 1.5; 
     margin-bottom: 1.5;
 }
-.nav-link a:visited{ /*Corrigir item menu que não esta com border-radius quando clicado*/ 
-    border-radius: 15px;
-}
+ 
 /*-----------------------------------Menu hamburger--------------------------------*/ 
     .menu-hamburger {
         position: fixed;
@@ -451,7 +451,7 @@ footer .rodape {
     height: 100%;
     text-align: center;
     z-index: 1; 
-    margin-top: 2.3em;
+    margin-top: 3em;
     margin-bottom: 1em;   
 }
 .nome-principal h1{ /*Julie Santiago*/ 
