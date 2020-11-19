@@ -380,7 +380,7 @@ input, textarea {
     padding-top: 1em;
 }
  .nav-list{
-     margin-top: 0;
+    margin-top: 0;
     list-style: none;
     width: 100%;
     height: 150px;
@@ -388,15 +388,13 @@ input, textarea {
     align-content: center;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(12, 12, 12);
-    
 }
 .nav-link {
-    
+    background-color: rgb(236, 6, 148);
+    border-radius: 15px;
 }
 
 .nav-link a{
-    
     font-size: 1.5em;
     font-family: 'PoiretOne';
     font-weight: bold;
@@ -404,14 +402,14 @@ input, textarea {
     padding-bottom: 0.5em;
     margin-top: 1.5; 
     margin-bottom: 1.5;
-    
 }
 /*-----------------------------------Menu hamburger--------------------------------*/ 
     .menu-hamburger {
         position: fixed;
         left: 80%; 
         z-index: 10000;
-        margin-top: 3%; 
+        margin-top: 0;
+        padding-top: 2em; 
         justify-content: center;
         align-items: center;
         display: flex;
