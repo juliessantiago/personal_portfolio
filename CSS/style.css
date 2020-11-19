@@ -284,7 +284,7 @@ header {
     display: flex;
 }
 form {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 form label {
@@ -303,12 +303,13 @@ input, textarea {
     border-radius: 5px;
 }
 #enviar{
-    padding: 1.3em;
-    background:  #F97B13;
+    padding: 1em;
+    background-image: linear-gradient(to bottom,  rgb(255, 136, 0), yellow);
     color: white;
     width: initial; 
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
+    font-weight: bolder;
     margin-top: 1em;
     cursor: pointer;
     justify-self: center;
@@ -343,10 +344,11 @@ input, textarea {
     position: absolute;
     cursor: pointer;
     padding-bottom: 1.5em;
+    transition: ease-in-out 0.5s; 
 }
 .topo a img:hover{
-    transition: ease-in-out 0.2s; 
-    transform: translateY(-2em) /*Dá uma travada?*/ 
+    transition: ease-in-out 0.5s; 
+    transform: translateY(-8em) /*Dá uma travada?*/ 
 }
 
 /*##################################### Tela  smartphone #################################*/ 
@@ -477,6 +479,7 @@ input, textarea {
     justify-content: space-around;
 }
 .imagem-perfil {
+    border-radius: 3px;
     width: auto;
     height: auto;
     margin: 0 auto; /*Para zerar margem setada na tela maior*/ 
@@ -528,7 +531,7 @@ input, textarea {
 /*----------------------------------------Portfolio------------------------------*/
 .portfolio .container {
     position: relative;
-    max-width: 250px;
+    max-width: 290px;
 }
 .portfolio-item{
     display: flex;
@@ -550,6 +553,14 @@ input, textarea {
     font-family: 'Roboto';
     font-size: 0.9em;
     padding-bottom: 2em;
+}
+/*------------------------------------Formulário de contato------------------------*/ 
+.contato .container{
+    max-width: 300px;
+}
+.form {
+    width: 100%;
+    height: 100%;
 }
 
 
