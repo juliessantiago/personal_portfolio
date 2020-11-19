@@ -148,23 +148,23 @@ header {
     height: 6px;
     background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
     transition: ease-in 0.3s;
-    border-radius: 5px;
+    border-radius: 3px;
 }
  .menu-hamburger .barra::before, 
  .menu-hamburger .barra::after {
     content: '';
     position: absolute;
-    width: 60px;
+    width: 55px;
     height: 6px;
     background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
-    border-radius: 5px;
+    border-radius: 3px;
     transition: all 0.5 ease-in;
 }
 .barra::before{
-    transform: translateY(-20px); /*Barra acima*/ 
+    transform: translateY(-15px); /*Barra acima*/ 
 }
 .barra::after{
-    transform: translateY(20px); /*Barra abaixo*/ 
+    transform: translateY(15px); /*Barra abaixo*/ 
 }
 
 .menu-hamburger.open .barra {
@@ -290,20 +290,18 @@ form label {
 input, textarea {
     width: 100%;
     padding: 1em;
-    background-color: whitesmoke;
+    background-color: white;
     opacity: 0.8;
     border: none;
     border-radius: 5px;
 }
 #enviar{
-    background: rgb(248, 129, 17);
-    width: initial;
+    background: rgb(248, 102, 17);
     color: white;
+    width: initial; 
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     cursor: pointer;
     justify-self: center;
     display: block;
@@ -312,8 +310,8 @@ input, textarea {
 }
 #enviar:hover, 
 #enviar:focus{
-    transition: ease-in 0.1s;
-    background: rgb(250, 177, 20);
+    transition: ease-in 0.3s;
+    transform: rotate(180deg);
 }
 /*============================Copyright========================================*/
 .rodape {
