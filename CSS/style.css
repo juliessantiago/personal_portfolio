@@ -187,6 +187,7 @@ header {
     user-select: none; /*impede a seleção do objeto na página*/ 
 }
 .sobre-detalhes p{ /*Alinhar com a imagem!!*/ 
+    padding-top: 2%;
     height: 100%;
     color: white;
     font-family: 'Roboto';
@@ -324,6 +325,7 @@ input, textarea {
     position: relative;
     background-color: transparent;
     margin-bottom: 0;
+    padding: 1em;
 }
 .rodape p{
     text-align: center;
