@@ -512,9 +512,15 @@ footer .rodape {
     opacity: 0.8;
 }
 .redes-sociais {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-content: center;
+}
+.redes-sociais p{
+    font-family: 'PoiretOne';
+    font-size: 1em;
+    color:  white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 /*------------------------------------Habilidades----------------------------*/
 .habilidades  {
