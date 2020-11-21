@@ -188,12 +188,11 @@ header {
     user-select: none; /*impede a seleção do objeto na página*/ 
 }
 .sobre-detalhes p{ /*Alinhar com a imagem!!*/ 
-    text-align: justify;
     padding-top: 2%;
     height: 100%;
     color: white;
-    font-family: 'Roboto';
-    font-size: 1.5em;
+    font-family: 'PoiretOne';
+    font-size: 2em;
     text-align: center;
     opacity: 0.8;
     line-height: 1.5em;
@@ -251,8 +250,8 @@ header {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-around;
     flex-wrap: nowrap;
+    align-content: space-around;
 }
 .skill h1{
     font-family: 'Roboto';
@@ -263,8 +262,8 @@ header {
 .skill p{
     margin-left: 1em;
     margin-right: 1em;
-    font: 'Roboto';
-    font-size: 1.5em;
+    font-family: 'PoiretOne', sans-serif;
+    font-size: 1.8em;
     color: white;
     opacity: 0.8;
 }
@@ -293,13 +292,18 @@ header {
     width: 100%;
     height: 100%;
     margin: 0.5em;
+    justify-content: center;
 }
 .portfolio-item:nth-child(odd){ /*Seleciona os elementos ímpares e inverte posição entre imagem e descição*/ 
     flex-direction: row-reverse;
 }
 .portfolio-item:nth-child(odd) p{
-    margin-left: 3em;
+    margin-right: 3em;
     text-align: center;
+    word-wrap: normal;
+}
+.portfolio-item:nth-child(odd) img{ 
+    margin-left: 12em;
 }
 /*===============================Formulário de contato========================*/
 .contato {
@@ -310,7 +314,7 @@ form {
     margin: 0 auto;
 }
 form label {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PoiretOne', sans-serif;
     font-size: 1.5em;
     opacity: 0.8;
     margin-bottom: 2em;
@@ -537,14 +541,14 @@ footer .rodape {
     justify-content: space-around;
 }
 .skill h1{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: white;
     padding-bottom: 0.5em;
     padding-top: 0.6em;
 }
 .skill p{
-    font-family: 'Roboto';
+    font-family: 'PoiretOne', sans-serif;
     font-size: 0.9em;
     color: white;
     opacity: 0.8;
