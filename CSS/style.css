@@ -211,7 +211,7 @@ header {
 .redes-sociais p{
     font-family: 'PoiretOne';
     font-size: 2em;
-    color:  white;
+    color:  rgb(241, 153, 20);
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -358,10 +358,10 @@ footer .rodape {
     justify-content: space-around;
     width: 100%;
     position: relative;
-    background-color: transparent;
+    background: transparent; 
 }
 .rodape {
-    background-color: rgb(15, 15, 15);
+    background-color: ;
 }
 .rodape p{
     padding-top: 0.3em;
@@ -370,10 +370,11 @@ footer .rodape {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     margin-top: 1em;
+    background-color: rgb(201, 18, 176)
 }
 
 /*##################################### Tela  smartphone #################################*/ 
-@media screen and (max-width: 360px){
+@media screen and (min-width: 320px ) and (max-width: 480px) {
 /*------------------------Configurações gerais-------------------------------------------*/ 
     .container {
         width: 80%;
@@ -522,7 +523,7 @@ footer .rodape {
 .redes-sociais p{
     font-family: 'PoiretOne';
     font-size: 1em;
-    color:  white;
+    color:  rgb(201, 18, 176);
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
