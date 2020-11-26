@@ -593,16 +593,10 @@ form {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
-
 #enviar {
     font-size: 1em;
     padding: 0.8em;
     transition: 0.2s;
-}
-#enviar:hover, 
-#enviar:focus {
-    transition: 0.2 ease-in;
-    transform: scale(1.2)
 }
 
 /*------------------------------------------Rodapé--------------------------------*/
@@ -768,7 +762,7 @@ form {
     /*----------------------------Portfolio----------------------------*/
     .portfolio-item{
         display: flex;
-        justify-content: center;
+
         align-items: center;
         margin-top: 2em;
         margin-bottom: 2em;
@@ -786,21 +780,28 @@ form {
         padding-bottom: 1em;
         opacity: 0.7;
     }
-    .portfolio-img{
-         margin: 1em;
-        justify-content: center;
-    }
     .portfolio-img img {
        width: 100%;
     }
-    .portfolio-item:nth-child(odd){ /*Seleciona os elementos ímpares e inverte posição entre imagem e descição*/ 
-        flex-direction: row-reverse;
-    }
-    .portfolio-item:nth-child(odd) p{
-        margin-right: 3em;
-        text-align: center;
-        word-wrap: normal;
-    }
+/*------------------------------Contato----------------------------------*/
+.container .contato{
+    max-width: 760px;
+}
+form {
+    width: 100%;
+    height: 100%;
+}
+ form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+#enviar {
+    font-size: 1em;
+    padding: 1.2em;
+    transition: 0.2s;
+}
+
+
 
 
 
