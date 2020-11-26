@@ -241,11 +241,14 @@ header {
     transition: ease-in 0.6s;
 }
 /*=====================Habilidades========================*/
-
 .habilidades .itens {
+    margin-right: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     padding-bottom: 3em;
+}
+.habilidade {
+    margin-bottom: 1.5em;
 }
 
 .skill h1{
@@ -631,13 +634,13 @@ form {
     .secao-cabecalho h1 {
         line-height: 0mm;
         opacity: 0.5;
-        font-size: 4em;
+        font-size: 6em;
         font-family: 'RobotoBlack';
         color: white; 
     }
     .secao-cabecalho h2{ 
         margin-left: 2em;  /*Avanço em relação ao h1*/   
-        font-size: 2em;
+        font-size: 3em;
         font-family: 'Roboto';
     }
 
@@ -652,20 +655,116 @@ form {
     margin-top: 2em;
     list-style: none;
     width: 100%;
-    height: 180px; /*Cuidar altura, pois esta limitando o "espalhamento" dos itens*/ 
+    height: 190px; /*Cuidar altura, pois esta limitando o "espalhamento" dos itens*/ 
     display: flex;
     align-content: center;
     flex-direction: column;
     justify-content: space-around;
 }
 .nav-link {
-    background-color: rgb(236, 6, 148);
+    background-color:  rgb(236, 6, 148, 0.7);
+    border: solid 1px rgb(236, 6, 148);
     border-radius: 5px; 
     font-size: 2.5em;
     margin-bottom: 2em;
     font-family: 'PoiretOne';
     font-weight: lighter;
 }
+/*----------------------------------Menu hamburger--------------------------------*/ 
+    .menu-hamburger {
+        position: fixed;
+        left: 90%; 
+        z-index: 10000;
+        margin-top: 2em;
+        padding-top: 2em; 
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .barra {
+        width: 35px;
+        height: 4px;
+        background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+        border-radius: 3px;
+    }
+     .menu-hamburger .barra::before, 
+     .menu-hamburger .barra::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background-image: linear-gradient(to right, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+        border-radius: 3px; 
+    }
+    .barra::before{
+        transform: translateY(-10px); /*Barra acima*/ 
+    }
+    .barra::after{
+        transform: translateY(10px); /*Barra abaixo*/ 
+    }
+    .menu-hamburger.open .barra{
+        transform: rotate(360deg)
+    }
+
+    /*------------------------Habilidades--------------------------------*/
+    .habilidades .itens {
+        margin-right: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        padding-bottom: 3em;
+        
+    }
+    .habilidade {
+        margin-bottom: 1.5em;
+    }
+    .skill h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        color:  white;
+        padding-bottom: 0.5em;
+        padding-top: 0.6em;
+    }
+    .skill p{
+        vertical-align: middle;
+        text-align: center;
+        font-family: 'PoiretOne', sans-serif;
+        font-size: 1.5em;
+        color: white;
+        opacity: 0.8;
+    } 
+
+    /*----------------------------Sobre--------------------------------------------*/ 
+    .sobre {
+        margin-top: 15em;
+        padding: 1em;
+    }
+    .sobre-detalhes {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: row; /*Para imagem ficar ao lado do texto*/
+        justify-content: space-around;
+    }
+.imagem-perfil {
+        padding-top: 2em;
+        border-radius: 3px;
+        width: 100%; 
+        height: 100%;
+        user-select: none; /*impede a seleção do objeto na página*/ 
+    }
+    .sobre-detalhes p{ 
+        height: 100%;
+        color: white;
+        font-family: 'PoiretOne';
+        font-size: 1.3em;
+        text-align: center;
+        opacity: 0.8;
+    }
+    .redes-sociais {
+        align-content: center;
+    }
 
 
 
