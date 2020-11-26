@@ -241,13 +241,7 @@ header {
     transition: ease-in 0.6s;
 }
 /*=====================Habilidades========================*/
-.habilidades .container {
 
-}
-.habilidades  {
-    
-    
-}
 .habilidades .itens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -408,30 +402,27 @@ footer .rodape {
     padding-top: 0.3em;
 }
  .nav-list{
-    margin-top: 0;
+    margin-top: 10px;
     list-style: none;
     width: 100%;
-    height: 110px;
+    height: 135px; /*Esta limitando "espalhamento" dos itens*/ 
     display: flex;
     align-content: center;
     flex-direction: column;
     justify-content: space-around;
 }
-.nav-link {
-    background-color: rgb(236, 6, 148);
-    border-radius: 15px;
-    font-size: 1.5em;
-}
 
-.nav-link a{
-    font-weight: bold;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 1.5; 
-    margin-bottom: 1.5;
+.nav-link {
+    padding-top: 3px; 
+    padding-bottom: 3px;
+    background-color: rgb(236, 6, 148);
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-family: 'PoiretOne';
+    font-weight: lighter;
 }
  
-/*-----------------------------------Menu hamburger--------------------------------*/ 
+/*----------------------------------Menu hamburger--------------------------------*/ 
     .menu-hamburger {
         position: fixed;
         left: 80%; 
@@ -620,4 +611,63 @@ form {
     opacity: 0.8;
 }
 
-}/*Fim configuração tela max 360px*/ 
+}/*Fim configuração tela min 320px max 480px*/
+
+/*=======================Tela Ipad, tablets====================*/ 
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+  
+    .container {
+        width: 480px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .secao-cabecalho {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .secao-cabecalho h1 {
+        line-height: 0mm;
+        opacity: 0.5;
+        font-size: 4em;
+        font-family: 'RobotoBlack';
+        color: white; 
+    }
+    .secao-cabecalho h2{ 
+        margin-left: 2em;  /*Avanço em relação ao h1*/   
+        font-size: 2em;
+        font-family: 'Roboto';
+    }
+
+    /*-------------------------------------Menu------------------------------------------*/ 
+ .top-nav.open {
+    position: fixed;
+    margin-bottom: 0.5em;
+    background: transparent;
+    padding-top: 1.3em;
+}
+ .nav-list{
+    margin-top: 2em;
+    list-style: none;
+    width: 100%;
+    height: 180px; /*Cuidar altura, pois esta limitando o "espalhamento" dos itens*/ 
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav-link {
+    background-color: rgb(236, 6, 148);
+    border-radius: 5px; 
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-family: 'PoiretOne';
+    font-weight: lighter;
+}
+
+
+
+
+}/*Fim configurações tela min 480 max 768px*/ 
