@@ -765,7 +765,42 @@ form {
     .redes-sociais {
         align-content: center;
     }
-
+    /*----------------------------Portfolio----------------------------*/
+    .portfolio-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .portfolio-item .portfolio-description h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    .portfolio-item .portfolio-description p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+        padding-bottom: 1em;
+        opacity: 0.7;
+    }
+    .portfolio-img{
+         margin: 1em;
+        justify-content: center;
+    }
+    .portfolio-img img {
+       width: 100%;
+    }
+    .portfolio-item:nth-child(odd){ /*Seleciona os elementos ímpares e inverte posição entre imagem e descição*/ 
+        flex-direction: row-reverse;
+    }
+    .portfolio-item:nth-child(odd) p{
+        margin-right: 3em;
+        text-align: center;
+        word-wrap: normal;
+    }
 
 
 
