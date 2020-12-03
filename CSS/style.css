@@ -40,7 +40,6 @@ header {
 }
 .container {
     width: 80%;
-   
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -873,58 +872,60 @@ form {
         transform: rotate(360deg)
     }
 
-}/*=============================Tela min 1024px==============================*/ 
-@media and screen (min-width 1024px) {
-        .container {
-            width: 1100px;
-            height: 100%;
-            margin: 0 auto;
-            position: relative;
-        }
-        .top-nav {
-            top: -100vh;
-            display: flex;
-            z-index: 100;/*Garantir sobreposição em relação ao nome principal*/ 
-            height: 15%; 
-            width: 100%; 
-            position: absolute;
-        }
-        .top-nav.open{
-            position: fixed;
-            transition: ease-in 0.6s;
-            width: 100%;
-            top: 0;
-            background-color: rgb(22, 22, 22);  
-        }
-        .nav-list{
-            list-style: none;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;  
-            align-content: space-around;
-        }
+}/*=============================Tela Notebook ==============================*/ 
+@media screen and (min-width: 1024px) and (max-width: 1300px ) {
+
+/*---------------------------------Menu--------------------------------*/ 
+    .top-nav {
+        top: -100vh;
+        display: flex;
+        z-index: 100;/*Garantir sobreposição em relação ao nome principal*/ 
+        height: 15%; 
+        width: 100%; 
+        position: absolute;
+    }
+    .top-nav.open{
+        position: fixed;
+        transition: ease-in 0.6s;
+        width: 100%;
+        top: 0;
+        background-color: rgb(22, 22, 22);  
+    }
+    .nav-list{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        align-content: space-around;
+    }
+
+    .nav-link {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-size: 2em;
+        font-family: 'PoiretOne';
+        font-weight: bold;
         
-        .nav-link {
-            padding-left: 1.5em;
-            padding-right: 1.5em;
-            font-size: 2em;
-            font-family: 'PoiretOne';
-            font-weight: bold;
-            
-        }
-        
-        .nav-link:hover, 
-        .nav-link:focus {
-            background: linear-gradient(to top, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
+    }
+
+    .nav-link:hover, 
+    .nav-link:focus {
+        background: linear-gradient(to top, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+/*-----------------------------Menu Hamburguer----------------------------------*/
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
     .menu-hamburger {
         z-index: 10000;
-        margin-top: 2%; 
+        margin-top: 4.5em; 
         left: 90%;
         position: fixed; 
         justify-content: center;
@@ -959,6 +960,7 @@ form {
     }
 
     .menu-hamburger.open .barra {
-        transform: translateX(-10em);
+        transform: translateX(-70em);
     }
+
 }
