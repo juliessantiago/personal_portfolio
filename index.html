@@ -18,7 +18,7 @@
         
         </div>
     
-        <div class="top-nav" id="nav">
+        <div class="top-nav" id="nav" data-toggle="dropdown">
             <ul class="nav-list">
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li><a href="#habilidades" class="nav-link">Skills  </a></li>
@@ -214,17 +214,22 @@
                 <h1>Vamos</h1>
                 <h2>Trabalhar?</h2>
             </div>
-            <form action="" method="POST">
+            <div id="mensagem-contato">
+                    <p>Batatinha</p>
+
+            </div>
+            <form action="" method="POST" id="formulario" >
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Informe seu nome" required>
+                <input type="text" name='nome' value="nome" placeholder="Informe seu nome" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Digite seu email" required>
+                <input type="email" name="email" placeholder="Digite seu email" required>
                 <label>Deixe sua mensagem</label>
-                <textarea id="mensagem" name="mensagem" cols="20" rows="10"></textarea>
+                <textarea name="mensagem" value="mensagem"cols="20" rows="10"></textarea>
                 
-                <input type="submit" value="Enviar" id="enviar" >
+                <input type="submit" name="submit" value="Enviar" id="enviar" >
                 
             </form>
+            
         </div>
     </section>
 
@@ -237,4 +242,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/funcoes.js"></script>
 </html>

@@ -347,6 +347,9 @@ input, textarea {
     transition: 0.2s;
     transform: scale(1.2); /*Aumenta tamanho sem alterar espaçamento ao redor*/ 
 }
+ #mensagem-contato { /*Aparece apenas no submit do formulário*/ 
+    display: none;
+}
 /*===================================Rodapé ========================================*/
 footer .rodape {
     display: flex;
@@ -872,7 +875,7 @@ form {
         transform: rotate(360deg)
     }
 
-}/*=============================Tela Notebook ==============================*/ 
+}/*=============================Tela Notebook menor==============================*/ 
 @media screen and (min-width: 1024px) and (max-width: 1300px ) {
 
 /*---------------------------------Menu--------------------------------*/ 
@@ -960,7 +963,7 @@ form {
     }
 
     .menu-hamburger.open .barra {
-        transform: translateX(-70em);
+        transform: translateX(-2500%);
     }
 
 }
