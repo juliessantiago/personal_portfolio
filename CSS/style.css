@@ -347,8 +347,22 @@ input, textarea {
     transition: 0.2s;
     transform: scale(1.2); /*Aumenta tamanho sem alterar espaçamento ao redor*/ 
 }
- #mensagem-contato { /*Aparece apenas no submit do formulário*/ 
-    display: none;
+.swal-modal {
+    background-color: rgba(236, 6, 148, 0.8)!important;
+}
+.swal-button { /*Sobreposição ao estilo do Sweet Alert*/ 
+    margin: 0 auto!important;
+    background-color: orange !important;
+    border: none !important;
+    padding: 8px 10px !important;
+}
+.swal-title {
+    color: white !important;
+    font-family: 'PoiretOne'!important;
+}
+.swal-text {
+    color: white !important;
+    font-family: 'PoiretOne' !important;
 }
 /*===================================Rodapé ========================================*/
 footer .rodape {

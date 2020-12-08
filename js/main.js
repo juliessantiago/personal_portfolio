@@ -30,8 +30,10 @@ $(document).ready(function() {
                 console.log('Enviando dados'); 
             }
        })
-       .done(function(retorno){
-            alert('Obrigada pelo contato')
+       .done(function(retorno){ //Não indica sucesso do insert, mas do Ajax
+       return (swal({
+            title: 'Obrigada por seu contato!',
+        }))
        })
        .fail(function(retorno){
             console.log('RESPOSTA DO PHP:' + retorno); 
