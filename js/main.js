@@ -6,32 +6,42 @@ $(document).ready(function() {
         $('.top-nav').toggleClass('open') //Adiciona classe open ao top-nav 
     }); //Menu hamburger 
 
-
-
-    //Envia dados do formulário para o php através do AJAX 
+    
     $('#formulario').submit(function(event){
-        event.preventDefault();
-        var nome = $('input[name=nome]').val()
-        var email = $('input[name=email]').val()
-        var mensagem = $('textarea[name=mensagem]').val()
+        event.preventDefault();  
+        
+        var  nome = $("input[type=text][name=nome]").val(); 
+        var  email = $("input[type=email][name=email]").val(); 
+        var  mensagem = $("textarea[name=mensagem]").val(); 
 
+        console.log (nome, email, mensagem); //Esta ok 
+        
+        
         $.ajax({
-            url: 'http://127.0.0.1:5500/index.php',
-            method: 'POST',
-            data: {
-                name: nome, 
-                em: email, 
-                msg: mensagem, 
+            url : "index.php",
+            type : 'POST',
+            data : {
+                key_nome : nome,
+                key_email : email,
+                key_mensagem : mensagem,
             },
-            dataType: 'json'
-        }).done(function(result){
-            console.log(result)
-        });
-        
-        
-    })//Formulário 
+            dataType: 'json', 
+            beforeSend : function(){
+                console.log('Enviando dados'); 
+            }
+       })
+       .done(function(retorno){
+            alert('Obrigada pelo contato')
+       })
+       .fail(function(retorno){
+            console.log('RESPOSTA DO PHP:' + retorno); 
+       }); 
+  
+    }); 
+    
     
 
-}); 
 
     
+
+}); //Fim
