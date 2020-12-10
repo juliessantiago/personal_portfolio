@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+   
     //Mostra menu - normal E dropdown usam a mesma estrutura 
     $('.menu-hamburger').on('click', function(){
         $(this).toggleClass('open') //Adiciona classe open ao menu-hamburger 
@@ -43,6 +43,32 @@ $(document).ready(function() {
        }); 
   
     }); 
+
+
+    
+    
+    //Faz o scroll da página 
+    $('.topo').click(function(event){
+        event.preventDefault(); //Retirando comportamento padrão da âncora
+        $('html, body').animate({scrollTop: 0}, 1200); //velocidade em ms 
+    }); 
+
+    // Exibe ou oculta o botão
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.topo').fadeIn('slow');
+        } else {
+            $('.topo').fadeOut('slow');
+        }
+    });
+    
+    
+   
+   
+        
+        
+    
+    
     
     
 
