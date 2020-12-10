@@ -18,7 +18,7 @@ $(document).ready(function() {
         
         
         $.ajax({
-            url : "index.php",
+            url : "source/index.php",
             type : 'POST',
             data : {
                 key_nome : nome,

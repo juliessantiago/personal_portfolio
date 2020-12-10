@@ -83,7 +83,7 @@ header {
 }
 .nome-principal h4 { /*Desenvolvedora web*/ 
     font-family: 'RobotoBlack', sans-serif; 
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 
@@ -190,10 +190,10 @@ header {
     padding-top: 2%;
     height: 100%;
     color: white;
+    opacity: 0.9;
     font-family: 'PoiretOne';
     font-size: 2em;
     text-align: center;
-    opacity: 0.8;
     line-height: 1.5em;
 }
 .nav-list-rede{
@@ -308,6 +308,7 @@ header {
 }
 form {
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 form label {
@@ -321,7 +322,7 @@ input, textarea {
     width: 100%;
     padding: 1em;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     border: none;
     border-radius: 5px;
     margin-bottom: 1em;
@@ -347,18 +348,18 @@ input, textarea {
     transition: 0.2s;
     transform: scale(1.2); /*Aumenta tamanho sem alterar espaçamento ao redor*/ 
 }
+/*---------------------------Modal de agradecimento------------------------------*/ 
 .swal-modal {
-    background-color: rgba(236, 6, 148, 0.8)!important;
+    background-color: rgba(236, 6, 148, 0.7)!important;
 }
 .swal-button { /*Sobreposição ao estilo do Sweet Alert*/ 
-    margin: 0 auto!important;
     background-color: orange !important;
     border: none !important;
     padding: 8px 10px !important;
 }
 .swal-title {
     color: white !important;
-    font-family: 'PoiretOne'!important;
+    font-family: 'Roboto'!important;
 }
 .swal-text {
     color: white !important;
@@ -383,7 +384,26 @@ footer .rodape {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     margin-top: 1em;
-    background-color: rgb(201, 18, 176)
+    background-color: rgb(230, 10, 200)
+}
+.topo {
+    background-image: linear-gradient( to bottom, rgb(201, 18, 176), rgb(255, 136, 0), yellow);
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: #d9a000;
+    cursor: pointer;
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    right: 22px;
+    z-index: 3;
+}
+.topo img{
+    margin: 0 auto;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
 }
 
 /*##################################### Tela  smartphone #################################*/ 
@@ -526,6 +546,7 @@ footer .rodape {
     font-size: 1em;
     text-align: center;
     opacity: 0.8;
+    
 }
 .redes-sociais {
     align-content: center;
