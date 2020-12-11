@@ -61,20 +61,15 @@ $(document).ready(function() {
             $('.topo').fadeOut('slow');
         }
     });
-
-   //Efeito das habilidades 
-   $('.nivel2').hide(); 
-    $('.skill').hover(function(event){
-        event.preventDefault(); 
-        $('.nivel2').show('slow'); 
-        $('.nivel2').css('width', '80px'); 
-        $('.nivel2').css('background-color', 'rgb(201, 18, 176'); 
+    //Evento hover dos itens das habilidades 
+    //Preenchimento da div nivel2 acontece pelo CSS
+    $('.nivel').hide(); 
+    $('.skill').hover(function(){
+        $('.nivel').show('slow'); 
+        
     }); 
+
    
-    $('.skill').mouseout(function(event){
-       
-    })
-    
 
     
     
