@@ -64,10 +64,14 @@ $(document).ready(function() {
     //Evento hover dos itens das habilidades 
     //Preenchimento da div nivel2 acontece pelo CSS
     $('.nivel').hide(); 
-    $('.skill').hover(function(){
-        $('.nivel').show('slow'); 
-        
+    $('.habilidade').hover(function(){
+        $('.nivel, cinq, oit').show('slow'); 
     }); 
+
+    $(window).scroll(function() {
+        $('.nivel').hide(); 
+    });
+    
 
    
 
