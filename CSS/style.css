@@ -264,7 +264,7 @@ header {
  .nivel {
     height: 8px;
     width: 100px;
-    border: solid 0.1em rgba(200, 0, 150, 0.5);
+    border: solid 0.1em  rgb(173, 8, 151);
     border-radius: 5px;
     margin: 0 auto;   
     margin-bottom: 1em; 
@@ -275,23 +275,23 @@ header {
     height: 6px;
 }
 /*---------------------------Habilidades classificadas por nível------------------*/ 
-.nov:hover {
-    background-color: rgba(200, 0, 150, 0.6);
+.nov {
+    background-color: rgb(230, 10, 200);
     transition: ease-in 0.3s;
     width: 90%;
 }
-.oit:hover{
-    background-color: rgba(200, 0, 150, 0.6);
+.oit{
+    background-color: rgb(230, 10, 200);
     transition: ease-in 0.3s;
     width: 80%;
 }
-.cinq:hover{
-    background-color: rgba(200, 0, 150, 0.6);
+.cinq{
+    background-color:  rgb(230, 10, 200);
     transition: ease-in 0.3s;
     width: 50%;
 }
-.cem:hover{
-    background-color: rgba(200, 0, 150, 0.6);
+.cem{
+    background-color: rgb(230, 10, 200);
     transition: ease-in 0.3s;
     width: 100%;
 }
