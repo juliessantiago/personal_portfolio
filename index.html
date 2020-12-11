@@ -93,18 +93,20 @@
             </div>
 
             <div class="itens">
-                
                 <div class="habilidade">
-                    <div class="skill">
-                        
+                    <div class="nivel" id="1">
+                        <div class="nivel2"></div>
+                    </div>
+                    <div class="skill" id="1">
                         <h1>NodeJS</h1>
                         <p>Ambiente de execução Javascript server-side</p>
                     </div>
                 </div> <!--habilidade-->
 
                 <div class="habilidade">
-                    <div class="skill">
-                        
+                    <div class="nivel" id="2">
+                    </div>
+                    <div class="skill" id="2">
                         <h1>Express</h1>
                         <p>Framework para NodeJS, possui conjunto completo 
                             de ferramentas para desenvolvimento de aplicações 
@@ -113,7 +115,9 @@
                     </div>
                 </div>  <!--habilidade-->
 
-                <div class="habilidade">
+                <div class="habilidade" id="3">
+                    <div class="nivel" id="3">
+                    </div>
                     <div class="skill">
                         <h1>MySQL</h1>
                         <p>Gerenciador de banco de dados, pela Oracle. Usa a SQL (Structure Query Language
@@ -121,16 +125,19 @@
                     </div>
                 </div> <!--habilidade-->
 
-                    <div class="habilidade">
+                    <div class="habilidade" id="4">
+                        <div class="nivel" id="4">
+                        </div>
                         <div class="skill">    
                                 <h1>MongoDB</h1>
                                 <p>Software de banco de dados NoSQL, orientado a documentos. </p>
                         </div>
                     </div> <!--habilidade-->
 
-                        <div class="habilidade">
+                        <div class="habilidade" id="5">
+                            <div class="nivel" id="5">
+                            </div>
                             <div class="skill">
-                                
                                 <h1>Processo de desenvolvimento de software</h1>
                                 <p> Conjunto de atividades padronizadas, com o objetivo de 
                                      definir, desenvolver, testar e manter
@@ -138,21 +145,15 @@
                             </div>
                         </div> <!--habilidade-->
 
-                        <div class="habilidade">
+                        <div class="habilidade" id="6">
+                            <div class="nivel" id="6">
+                            </div>
                             <div class="skill">
-                                
                                 <h1>GIT</h1>
                                 <p>Sistemas de controle de versão de código distribuído</p>
                             </div>
-                        </div> <!--habilidade-->
-        
-                
+                        </div> <!--habilidade-->  
             </div> <!--itens-->
-
-            
-            
-                
-            
         </div> <!--Container-->
     </section>
 
@@ -217,7 +218,7 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Digite seu email" required>
                 <label>Deixe sua mensagem</label>
-                <textarea name="mensagem" cols="20" rows="10"></textarea>
+                <textarea name="mensagem" cols="20" rows="10" placeholder="Deixe sua ideia, requisicao ou sugestão"></textarea>
                 
                 <input type="submit" name="submit" value="Enviar" id="enviar" >
                 

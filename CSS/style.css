@@ -249,10 +249,23 @@ header {
     margin-right: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
+    cursor: pointer;
 }
-.habilidade {
+.habilidade {/*Item individual*/ 
     margin: 10px;
+    padding-top: 15px;
     padding-bottom: 15px;
+}
+ .nivel {
+    height: 10px;
+    width: 100px;
+    border: solid 0.1em rgba(200, 0, 150, 0.9);
+    border-radius: 8px;
+    margin: 0 auto;   
+    margin-bottom: 1em; 
+}
+.nivel2{
+    height: 10px;
 }
 .skill h1{
     text-align: center;
@@ -278,6 +291,7 @@ header {
     align-items: center;
     margin-top: 2em;
     margin-bottom: 2em;
+    
 }
 .portfolio-item .portfolio-description h1{
     font-family: 'Roboto', sans-serif;
@@ -324,6 +338,7 @@ form label {
     margin-top: 2em
 }
 input, textarea {
+    font-family: 'PoiretOne', sans-serif;
     width: 100%;
     padding: 1em;
     background-color: white;
@@ -544,13 +559,15 @@ footer .rodape {
 }
 .sobre-detalhes p{ 
     display: flex;
-    padding-top: 2%;
+    padding-top: 1em;
+    padding-bottom: 3em;
     height: 100%;
     color: white;
     font-family: 'PoiretOne';
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     opacity: 0.8;
+    text-align: left;
 }
 /*----------------------------------Redes sociais----------------------------------*/ 
 .redes {
@@ -560,15 +577,16 @@ footer .rodape {
     align-content: center;
 }
 .redes-sociais img{
-    max-width: 30px;
+    max-width: 40px;
 }
 .redes-sociais p{
     font-family: 'PoiretOne';
     font-size: 1em;
-    color:  orange;
+    color: white;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin-left: 5em;
+    margin-right:5em;
+    opacity: 0.8;
 }
 /*------------------------------------Habilidades----------------------------*/
 .habilidades  {
@@ -586,22 +604,21 @@ footer .rodape {
 }
 .skill h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
-    padding-bottom: 0.5em;
     padding-top: 0.6em;
 }
 .skill p{
     font-family: 'PoiretOne', sans-serif;
-    font-size: 0.9em;
+    font-family: 0.8em;
+    font-size: 1.3em;
     color: white;
     opacity: 0.8;
-    margin-bottom: 1em;
 }
 /*----------------------------------------Portfolio------------------------------*/
 .portfolio .container {
     position: relative;
-    max-width: 290px;
+    max-width: 300px;
 }
 .portfolio-item{
     display: flex;
@@ -616,13 +633,13 @@ footer .rodape {
 
 .portfolio-item .portfolio-description h1{
     font-family: 'Roboto';
-    font-size: 1em;
+    font-size: 1.5em;
     padding-bottom: 1em;
 }
 .portfolio-item .portfolio-description p{
     text-align: center;
     font-family: 'Roboto';
-    font-size: 0.9em;
+    font-size: 1.3em;
     padding-bottom: 2em;
 }
 .portfolio-item:nth-child(odd){ /*Evitando transformação setada anteriormente*/ 
@@ -636,6 +653,12 @@ footer .rodape {
 form {
     width: 100%;
     height: 100%;
+}
+input, textarea {
+    font-family: 'PoiretOne', sans-serif;
+    font-size: 1em;
+    background-color: white;
+    opacity: 0.9;
 }
  form label {
     font-family: 'Roboto', sans-serif;

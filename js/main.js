@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   
+    
     //Mostra menu - normal E dropdown usam a mesma estrutura 
     $('.menu-hamburger').on('click', function(){
         $(this).toggleClass('open') //Adiciona classe open ao menu-hamburger 
@@ -61,6 +61,25 @@ $(document).ready(function() {
             $('.topo').fadeOut('slow');
         }
     });
+
+   //Efeito das habilidades 
+   $('.nivel2').hide(); 
+    $('.skill').hover(function(event){
+        event.preventDefault(); 
+        $('.nivel2').show('slow'); 
+        $('.nivel2').css('width', '80px'); 
+        $('.nivel2').css('background-color', 'rgb(201, 18, 176'); 
+    }); 
+   
+    $('.skill').mouseout(function(event){
+       
+    })
+    
+
+    
+    
+
+
     
     
    
